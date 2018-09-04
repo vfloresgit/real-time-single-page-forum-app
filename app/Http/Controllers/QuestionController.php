@@ -14,6 +14,12 @@ class QuestionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('JWT',['except'=>['index','show']]);
+        //el except es para definir que metodos se requeriran el login;
+    }
+
     public function index()
     {
         return QuestionResource::collection(Question::latest()->get());
