@@ -17,10 +17,11 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
         "popper.js": "^1.12",
-        "vue": "^2.5.7",
+        "vue": "^2.5.21",
         "vue-update": "^1.0.6"
     },
     "dependencies": {
+        "vue-router": "^3.0.2",
         "vuejs": "^3.0.1",
         "vuetify": "^1.4.0"
     }
