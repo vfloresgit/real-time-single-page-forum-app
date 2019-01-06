@@ -1,6 +1,6 @@
 class Token{
    
-   isVaid(token){
+   isValid(token){
     
       const payload = this.payload(token);
       if(payload){
