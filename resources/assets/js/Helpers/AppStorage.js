@@ -4,8 +4,8 @@ class AppStorage{
        return localStorage.setItem('token',token);
     }
 
-    storeUser(){
-        localStorage.setItem('user',user);
+    storeUser(user){
+       return localStorage.setItem('user',user);
     }
 
     store(user,token){
