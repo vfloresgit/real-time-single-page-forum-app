@@ -17,11 +17,12 @@ class QuestionResource extends Resource
         // return parent::toArray($request);
         return [
             'title'=>$this->title,
+            'slug'=>$this->slug,
             'path'=>$this->path,
             'body'=>$this->body,
             'created_at'=>$this->created_at->diffForHumans(),
-            'user'=>$this->user->name
-
+            'user'=>$this->user->name,
+            'user_id'=>$this->user_id,
         ];
     }
 }
