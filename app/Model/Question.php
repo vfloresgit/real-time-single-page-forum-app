@@ -25,6 +25,8 @@ class Question extends Model
     }
 
     protected $fillable=['title','slug','body','user_id','category_id'];
+
+    protected $with = ['replies'];
     // protected $guarded = [];
 
     public function user(){
